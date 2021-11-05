@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA8300202735337B00AD00DE /* TibberExpressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8300102735337700AD00DE /* TibberExpressApp.swift */; };
+		EA8300222735337B00AD00DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8300112735337700AD00DE /* ContentView.swift */; };
+		EA8300242735337B00AD00DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA8300122735337B00AD00DE /* Assets.xcassets */; };
+		EA830030273535E800AD00DE /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = EA83002F273535E800AD00DE /* Apollo */; };
+		EA830032273535E800AD00DE /* ApolloCodegenLib in Frameworks */ = {isa = PBXBuildFile; productRef = EA830031273535E800AD00DE /* ApolloCodegenLib */; };
+		EA830034273535E800AD00DE /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = EA830033273535E800AD00DE /* ApolloSQLite */; };
+		EA8300402735440700AD00DE /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83003F2735440700AD00DE /* API.swift */; };
+		EA830043273544C100AD00DE /* TibberProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA830042273544C100AD00DE /* TibberProvider.swift */; };
+		EA83004C273567D300AD00DE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83004B273567D300AD00DE /* Home.swift */; };
+		EA83004E273578BF00AD00DE /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83004D273578BF00AD00DE /* ApiKey.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EA8300102735337700AD00DE /* TibberExpressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TibberExpressApp.swift; sourceTree = "<group>"; };
+		EA8300112735337700AD00DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EA8300122735337B00AD00DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA8300172735337B00AD00DE /* TibberExpress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TibberExpress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA830035273537B700AD00DE /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		EA83003B273538AC00AD00DE /* Overview.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Overview.graphql; sourceTree = "<group>"; };
+		EA83003F2735440700AD00DE /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		EA830042273544C100AD00DE /* TibberProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TibberProvider.swift; sourceTree = "<group>"; };
+		EA83004B273567D300AD00DE /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		EA83004D273578BF00AD00DE /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA8300142735337B00AD00DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA830030273535E800AD00DE /* Apollo in Frameworks */,
+				EA830032273535E800AD00DE /* ApolloCodegenLib in Frameworks */,
+				EA830034273535E800AD00DE /* ApolloSQLite in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA83000A2735337600AD00DE = {
+			isa = PBXGroup;
+			children = (
+				EA83000F2735337700AD00DE /* Shared */,
+				EA8300182735337B00AD00DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA83000F2735337700AD00DE /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EA830048273567B000AD00DE /* Views */,
+				EA8300102735337700AD00DE /* TibberExpressApp.swift */,
+				EA83003B273538AC00AD00DE /* Overview.graphql */,
+				EA83003F2735440700AD00DE /* API.swift */,
+				EA8300112735337700AD00DE /* ContentView.swift */,
+				EA830035273537B700AD00DE /* schema.json */,
+				EA8300122735337B00AD00DE /* Assets.xcassets */,
+				EA830042273544C100AD00DE /* TibberProvider.swift */,
+				EA83004D273578BF00AD00DE /* ApiKey.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		EA8300182735337B00AD00DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA8300172735337B00AD00DE /* TibberExpress.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA830048273567B000AD00DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA83004B273567D300AD00DE /* Home.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA8300162735337B00AD00DE /* TibberExpress (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA8300282735337B00AD00DE /* Build configuration list for PBXNativeTarget "TibberExpress (iOS)" */;
+			buildPhases = (
+				EA83003E2735392900AD00DE /* Apollo */,
+				EA8300132735337B00AD00DE /* Sources */,
+				EA8300142735337B00AD00DE /* Frameworks */,
+				EA8300152735337B00AD00DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TibberExpress (iOS)";
+			packageProductDependencies = (
+				EA83002F273535E800AD00DE /* Apollo */,
+				EA830031273535E800AD00DE /* ApolloCodegenLib */,
+				EA830033273535E800AD00DE /* ApolloSQLite */,
+			);
+			productName = "TibberExpress (iOS)";
+			productReference = EA8300172735337B00AD00DE /* TibberExpress.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA83000B2735337600AD00DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					EA8300162735337B00AD00DE = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = EA83000E2735337600AD00DE /* Build configuration list for PBXProject "TibberExpress" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA83000A2735337600AD00DE;
+			packageReferences = (
+				EA83002E273535E800AD00DE /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
+			productRefGroup = EA8300182735337B00AD00DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA8300162735337B00AD00DE /* TibberExpress (iOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA8300152735337B00AD00DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA8300242735337B00AD00DE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EA83003E2735392900AD00DE /* Apollo */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Apollo;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\n# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"Shared/schema.json\" API.swift\n\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA8300132735337B00AD00DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA8300222735337B00AD00DE /* ContentView.swift in Sources */,
+				EA8300402735440700AD00DE /* API.swift in Sources */,
+				EA83004C273567D300AD00DE /* Home.swift in Sources */,
+				EA830043273544C100AD00DE /* TibberProvider.swift in Sources */,
+				EA83004E273578BF00AD00DE /* ApiKey.swift in Sources */,
+				EA8300202735337B00AD00DE /* TibberExpressApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EA8300262735337B00AD00DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA8300272735337B00AD00DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		EA8300292735337B00AD00DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MU87UPK8Q4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.brurberg.TibberExpress;
+				PRODUCT_NAME = TibberExpress;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA83002A2735337B00AD00DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MU87UPK8Q4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.brurberg.TibberExpress;
+				PRODUCT_NAME = TibberExpress;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA83000E2735337600AD00DE /* Build configuration list for PBXProject "TibberExpress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA8300262735337B00AD00DE /* Debug */,
+				EA8300272735337B00AD00DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA8300282735337B00AD00DE /* Build configuration list for PBXNativeTarget "TibberExpress (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA8300292735337B00AD00DE /* Debug */,
+				EA83002A2735337B00AD00DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EA83002E273535E800AD00DE /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EA83002F273535E800AD00DE /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA83002E273535E800AD00DE /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		EA830031273535E800AD00DE /* ApolloCodegenLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA83002E273535E800AD00DE /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloCodegenLib;
+		};
+		EA830033273535E800AD00DE /* ApolloSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA83002E273535E800AD00DE /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloSQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EA83000B2735337600AD00DE /* Project object */;
+}

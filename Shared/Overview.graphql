@@ -1,0 +1,53 @@
+query Overview {
+  viewer {
+    homes {
+      timeZone
+      address {
+        address1
+        postalCode
+        city
+      }
+      owner {
+        firstName
+        lastName
+        contactInfo {
+          email
+          mobile
+        }
+      }
+      consumption(resolution: HOURLY, last: 10) {
+        nodes {
+          from
+          to
+          cost
+          unitPrice
+          unitPriceVAT
+          consumption
+          consumptionUnit
+        }
+      }
+      currentSubscription {
+        priceInfo {
+          current {
+            total
+            energy
+            tax
+            startsAt
+          }
+          today {
+            total
+            energy
+            tax
+            startsAt
+          }
+          tomorrow {
+            total
+            energy
+            tax
+            startsAt
+          }
+        }
+      }
+    }
+  }
+}
