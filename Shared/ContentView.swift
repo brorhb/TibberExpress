@@ -9,21 +9,53 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var tibberProvider: TibberProvider
-    
+    @EnvironmentObject var skiliftProvider: SkiliftProvider
+    @State private var initLoad = true
     var body: some View {
         NavigationView {
-            if tibberProvider.loading {
-                ProgressView()
-            } else {
-                List(tibberProvider.overview!.homes, id: \.?.address?.address1) {home in
-                    HomeView(home: home!)
+            VStack {
+                if initLoad {
+                    ProgressView()
+                } else {
+                    List {
+                        Section(header: Text("Strøm")) {
+                            ForEach(tibberProvider.overview!.homes, id: \.!.id) {home in
+                                HomeView(home: home!)
+                            }
+                        }
+                        Section(header: Text("Kameraer")) {
+                            ForEach(skiliftProvider.cameras) { camera in
+                                CameraView(camera: camera)
+                            }
+                        }
+                        Section(header: Text("Heisen")) {
+                            ForEach(skiliftProvider.weatherStations) {weatherStation in
+                                WeatherStationView(station: weatherStation)
+                            }
+                        }
+                    }.refreshable {
+                        await tibberProvider.fetch()
+                        do {
+                            try await skiliftProvider.fetchWeatherData()
+                            try await skiliftProvider.fetchCameras()
+                        } catch (let error) {
+                            print(error)
+                        }
+                    }
                 }
-                .navigationBarTitle("Adresser 🏡")
             }
+            .navigationBarTitle("Oversikt 🏡")
         }
         .onAppear {
             Task {
                 await tibberProvider.fetch()
+                do {
+                    try await skiliftProvider.fetchWeatherData()
+                    try await skiliftProvider.fetchCameras()
+                } catch (let error) {
+                    print(error)
+                }
+                initLoad = false
             }
         }
     }

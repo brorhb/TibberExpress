@@ -13,6 +13,7 @@ struct TibberExpressApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(TibberProvider())
+                .environmentObject(SkiliftProvider())
         }
     }
 }

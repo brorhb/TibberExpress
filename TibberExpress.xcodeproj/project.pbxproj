@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA206363273673BA00153D7B /* WeatherStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA206362273673BA00153D7B /* WeatherStation.swift */; };
+		EA20636527367E8500153D7B /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA20636427367E8500153D7B /* CameraView.swift */; };
+		EA3C8A4A2735A1C300D59EFA /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C8A492735A1C300D59EFA /* ApiKey.swift */; };
+		EA3C8A4C2735A5E400D59EFA /* SkiliftProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C8A4B2735A5E400D59EFA /* SkiliftProvider.swift */; };
 		EA8300202735337B00AD00DE /* TibberExpressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8300102735337700AD00DE /* TibberExpressApp.swift */; };
 		EA8300222735337B00AD00DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8300112735337700AD00DE /* ContentView.swift */; };
 		EA8300242735337B00AD00DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA8300122735337B00AD00DE /* Assets.xcassets */; };
@@ -16,10 +20,13 @@
 		EA8300402735440700AD00DE /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83003F2735440700AD00DE /* API.swift */; };
 		EA830043273544C100AD00DE /* TibberProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA830042273544C100AD00DE /* TibberProvider.swift */; };
 		EA83004C273567D300AD00DE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83004B273567D300AD00DE /* Home.swift */; };
-		EA83004E273578BF00AD00DE /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83004D273578BF00AD00DE /* ApiKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA206362273673BA00153D7B /* WeatherStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStation.swift; sourceTree = "<group>"; };
+		EA20636427367E8500153D7B /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		EA3C8A492735A1C300D59EFA /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
+		EA3C8A4B2735A5E400D59EFA /* SkiliftProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiliftProvider.swift; sourceTree = "<group>"; };
 		EA8300102735337700AD00DE /* TibberExpressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TibberExpressApp.swift; sourceTree = "<group>"; };
 		EA8300112735337700AD00DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EA8300122735337B00AD00DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -29,7 +36,6 @@
 		EA83003F2735440700AD00DE /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		EA830042273544C100AD00DE /* TibberProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TibberProvider.swift; sourceTree = "<group>"; };
 		EA83004B273567D300AD00DE /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		EA83004D273578BF00AD00DE /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +71,8 @@
 				EA830035273537B700AD00DE /* schema.json */,
 				EA8300122735337B00AD00DE /* Assets.xcassets */,
 				EA830042273544C100AD00DE /* TibberProvider.swift */,
-				EA83004D273578BF00AD00DE /* ApiKey.swift */,
+				EA3C8A492735A1C300D59EFA /* ApiKey.swift */,
+				EA3C8A4B2735A5E400D59EFA /* SkiliftProvider.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -82,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				EA83004B273567D300AD00DE /* Home.swift */,
+				EA206362273673BA00153D7B /* WeatherStation.swift */,
+				EA20636427367E8500153D7B /* CameraView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -186,10 +195,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA8300222735337B00AD00DE /* ContentView.swift in Sources */,
+				EA206363273673BA00153D7B /* WeatherStation.swift in Sources */,
 				EA8300402735440700AD00DE /* API.swift in Sources */,
+				EA20636527367E8500153D7B /* CameraView.swift in Sources */,
 				EA83004C273567D300AD00DE /* Home.swift in Sources */,
 				EA830043273544C100AD00DE /* TibberProvider.swift in Sources */,
-				EA83004E273578BF00AD00DE /* ApiKey.swift in Sources */,
+				EA3C8A4A2735A1C300D59EFA /* ApiKey.swift in Sources */,
+				EA3C8A4C2735A5E400D59EFA /* SkiliftProvider.swift in Sources */,
 				EA8300202735337B00AD00DE /* TibberExpressApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

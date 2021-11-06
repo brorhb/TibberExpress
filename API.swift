@@ -148,9 +148,7 @@ public final class OverviewQuery: GraphQLQuery {
         }
       }
 
-    public struct Home: Identifiable, GraphQLSelectionSet {
-        public let id = UUID()
-            
+      public struct Home: GraphQLSelectionSet {
         public static let possibleTypes: [String] = ["Home"]
 
         public static var selections: [GraphQLSelection] {

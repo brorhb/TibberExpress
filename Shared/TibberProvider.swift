@@ -11,30 +11,20 @@ import Network
 
 class TibberProvider: ObservableObject {
     @Published var overview: OverviewQuery.Data.Viewer?
-    @Published var loading = true
+    @Published var initialLoading = true
     
     func fetch() async -> Void {
-        loading = true
         let result = try? await withCheckedThrowingContinuation { continuation in
             Network.shared.apollo.fetch(query: OverviewQuery()) {result in
                 continuation.resume(with: result)
             }
         }
-        /*if let unwrappedData = result?.data?.resultMap {
-            let decoder = JSONDecoder()
-            let data = try? decoder.decode(Viewer.self, from: try! JSONSerialization.data(withJSONObject: unwrappedData, options: .prettyPrinted))
-            DispatchQueue.main.async {
-                self.overview = data
-            }
-        }*/
         DispatchQueue.main.async {
             if let data = result?.data?.viewer {
                 self.overview = data
             }
-            self.loading = false
+            self.initialLoading = false
         }
-        
-        
     }
 }
 
