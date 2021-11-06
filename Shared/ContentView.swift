@@ -18,17 +18,17 @@ struct ContentView: View {
                     ProgressView()
                 } else {
                     List {
-                        Section(header: Text("Strøm")) {
+                        Section(header: Text("⚡️")) {
                             ForEach(tibberProvider.overview!.homes, id: \.!.id) {home in
                                 HomeView(home: home!)
                             }
                         }
-                        Section(header: Text("Kameraer")) {
+                        Section(header: Text("🎥")) {
                             ForEach(skiliftProvider.cameras) { camera in
                                 CameraView(camera: camera)
                             }
                         }
-                        Section(header: Text("Heisen")) {
+                        Section(header: Text("🚡")) {
                             ForEach(skiliftProvider.weatherStations) {weatherStation in
                                 WeatherStationView(station: weatherStation)
                             }

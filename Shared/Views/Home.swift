@@ -27,14 +27,29 @@ struct HomeView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(home.address!.address1!)
-                .font(.headline)
+                .font(.title3)
             Text(home.address!.postalCode! + " " + (home.address?.city!)!)
                 .font(.footnote)
-            Text("Pris nå: \(Int(round(home.currentSubscription!.priceInfo!.current!.total! * 100))) øre")
-                .padding(.top)
-            Text("Beste pris i dag 🤑 \(getLowestPrice()) øre")
-                .padding(.top)
-            Text("Dårligste pris i dag 💸 \(highestPrice()) øre")
+            HStack {
+                Text("Pris nå")
+                    .font(.headline)
+                Spacer()
+                Text("\(Int(round(home.currentSubscription!.priceInfo!.current!.total! * 100))) øre")
+            }.padding(.top)
+            VStack(alignment: .leading) {
+                HStack {
+                    Text("Beste pris i dag 🤑")
+                        .font(.headline)
+                    Spacer()
+                    Text("\(getLowestPrice()) øre")
+                }
+                HStack {
+                    Text("Dårligste pris i dag 💸")
+                        .font(.headline)
+                    Spacer()
+                    Text("\(highestPrice()) øre")
+                }
+            }.padding(.top)
         }
     }
 }
